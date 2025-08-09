@@ -1,0 +1,67 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo-btn img {
+    height: 40px; /* 로고 이미지 크기 */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* 호버 시 색상 변경 */
+}
+
+/* 메인 콘텐츠 스타일 (헤더에 가리지 않도록 상단 여백 추가) */
+main {
+    padding-top: 80px; /* 헤더 높이만큼 여백 */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* 각 페이지에 맞게 main 콘텐츠 스타일을 다르게 지정할 수 있습니다. */
+.main-page {
+    text-align: center;
+}
+
+/* 포트폴리오 페이지 스타일 */
+.portfolio-page {
+    /* 여기에 포트폴리오 페이지 전용 CSS를 추가하세요 */
+}
+
+/* 연락처 페이지 스타일 */
+.contact-page {
+    /* 여기에 연락처 페이지 전용 CSS를 추가하세요 */
+}
