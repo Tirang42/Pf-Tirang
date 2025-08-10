@@ -45,7 +45,7 @@ nav a:hover {
 
 /* 메인 콘텐츠 스타일 (헤더에 가리지 않도록 상단 여백 추가) */
 main {
-    padding-top: 80px; /* 헤더 높이만큼 여백 */
+    padding-top: 120px; /* 헤더 높이만큼 여백 */
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
