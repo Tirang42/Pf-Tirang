@@ -43,12 +43,26 @@ nav a:hover {
     color: #ffd700; /* 호버 시 색상 변경 */
 }
 
-/* 메인 콘텐츠 스타일 (헤더에 가리지 않도록 상단 여백 추가) */
+/* 메인 콘텐츠 스타일 */
 main {
-    padding-top: 120px; /* 헤더 높이만큼 여백 */
+    padding-top: 90px; /* 헤더의 높이보다 충분히 큰 값으로 설정 */
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+/* ... 기존 미디어 쿼리 ... */
+@media (max-width: 768px) {
+    .logo-btn img {
+        height: 35px;
+    }
+    
+    /* 모바일 환경에서는 padding-top 값도 다시 계산 */
+    main {
+        padding-top: 80px; /* 모바일 헤더 높이에 맞게 조정 */
+    }
+    
+    /* ... 나머지 모바일 스타일 ... */
 }
 
 /* 각 페이지에 맞게 main 콘텐츠 스타일을 다르게 지정할 수 있습니다. */
