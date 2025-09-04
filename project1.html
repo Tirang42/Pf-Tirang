@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 프로젝트 홍보물 배경</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .promo-container {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            background: linear-gradient(135deg, #1f2937 0%, #0d1218 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .promo-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 10% 10%, rgba(139, 92, 246, 0.4) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 90%, rgba(251, 191, 36, 0.4) 0%, transparent 40%),
+                        radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.2) 0%, transparent 50%);
+            animation: pulse 10s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        .promo-text-group {
+            position: relative;
+            z-index: 10;
+        }
+        
+        h1.main-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.5), 0 0 20px rgba(236, 72, 153, 0.5);
+        }
+
+        .sub-heading {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #B0B0B0;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+
+        .highlight {
+            background: -webkit-linear-gradient(45deg, #8B5CF6, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 p-8 flex justify-center items-center min-h-screen">
+    <div class="promo-container">
+        <div class="promo-text-group">
+            <h1 class="main-heading">
+                당신의 손끝에서 <br><span class="highlight">현실이 되는 AI</span>
+            </h1>
+            <p class="sub-heading">
+                AI는 더 이상 상상 속의 기술이 아닙니다.<br>
+                우리 학교의 문제를 해결하는 특별한 AI를 직접 만들어 보세요.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
